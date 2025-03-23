@@ -225,6 +225,8 @@ opacity: 0;
 pointer-events: none;
 
 }
+
+
 .side_bar_nav .dev-menu-list{
     width: 200px;
     display: block;
@@ -261,53 +263,4 @@ left: 65px;
 }
 .side_bar_nav .nav-link .current-link{
     color: rgb(0, 0, 0);
-}
-.nav_iten{
-    cursor: pointer;
-}
-.loggin{
-    position: fixed;
-background-color: rgba(0, 0, 0, 0.742);
-border-radius: 16px;
-width: 350px;
-height: 300px;
-margin-left: 600px;
-margin-top: 250px;
-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.682);
-}
-.loggin .loggin-txt{
-    display: flex;
-    border-radius: 5px;
-    color: white;
-    height: 35px;
-    width: 350;
-    justify-content: center;
-    font-size: large;
-    background-color: black;
-}
-.user{
-    display: block;
-    color: rgba(255, 255, 255, 0.303);
-    font-size: smaller;
-    margin-top: 30px;
-    margin-left: 15px;
-    
-
-}
-.senha{
-    display: block;
-    color: rgba(255, 255, 255, 0.303);
-    font-size: smaller;
-    margin-top: 25px;
-    margin-left: 15px;
-
-}
-.loggin-button{
-    color: rgb(51, 109, 245);
-    border: none;
-    border-radius: 5px;
-    margin-top: 40px;
-    width: 350px;
-    height: 40px;
-    background-color: black;
 }
