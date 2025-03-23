@@ -24,6 +24,35 @@ body{
     background-color: black;
     transition: 0.4s ease;
 }
+.side_bar_nav .link-tip{
+    opacity: 0;
+    display: flex;
+    pointer-events: none;
+    position: absolute;
+    white-space: nowrap;
+    background: white;
+    flex-direction: column;
+    left: calc(100% + 10px);
+    transform: translateY(-65px);
+    padding: 3px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.829);
+    font-size: small;
+    transition: 0s;
+    color: black;
+    visibility: hidden;
+}
+
+.side_bar_nav .nav_iten:hover .link-tip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s ease;
+    transform: translateY(-45px);
+
+}
+.sidebar.collapsed .link-tip{
+    visibility: visible;
+}
 
 .sidebar.collapsed{
     top: 9px;
@@ -144,8 +173,8 @@ pointer-events: none;
 }
 
 .side_bar_nav .secundary_nav{
-    position: relative;
-    transform: translateY(-3px);
+    position: sticky;
+    bottom: 8vh;
 }
 
 .sidebar.collapsed .side_bar_nav .primary_nav{
@@ -154,11 +183,12 @@ pointer-events: none;
 }
 
 .sidebar.collapsed .side_bar_nav .secundary_nav{
-    transform: translateY(-30px);
+    transform: translateY(20px);
 }
 
 .side_bar_nav .dev_menu{
-    transform: translateY(105px);
+    position: sticky;
+    top:60lvh;
 }
 
 .side_bar_nav .dev-toggler {
@@ -190,11 +220,7 @@ pointer-events: none;
 
 }
 
-.sidebar .dev-toggler{
-    color: azure;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 .side_bar_nav .dev-menu-list{
     width: 200px;
     display: block;
@@ -207,6 +233,7 @@ pointer-events: none;
     background-color: black;
     transition: 0.4s ease;
     z-index: -1;
+    cursor: pointer;
 }
 .dev-menu-list.collapsed{
     left: 12px;
@@ -216,6 +243,9 @@ pointer-events: none;
     scale: 55%;
     transform: translateY(-190px);
 
+}
+.dev-menu-list .link-tip{
+    visibility: hidden;
 }
 .sidebar.collapsed .dev-menu-list{
 left: 65px;
