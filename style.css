@@ -1,0 +1,227 @@
+@font-face {
+    font-family: pixel;
+    src: url("fonts/pixel_font.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pixel;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+.sidebar{
+    top: 7px;
+    width: 330px;
+    position: fixed;
+    margin: 5px;
+    border-radius: 16px;
+    height: calc(99vh - 16px);
+    background-color: black;
+    transition: 0.4s ease;
+}
+
+.sidebar.collapsed{
+    top: 9px;
+    width: 85px;
+    transform: translateX(10px);
+    height: calc(98vh - 16px);
+}
+
+.side_bar_nav .nav-link .nav-label{
+    transition: 0.4s ease;
+}
+
+.sidebar.collapsed .side_bar_nav .nav-link .nav-label{
+
+opacity: 0;
+pointer-events: none;
+
+}
+
+.sidebar .nav-link{
+    color: azure;
+    text-decoration: none;
+}
+
+.side_bar_header .sidebar-text{
+    position: relative;
+    display: flex;
+    transform: translateX(120px);
+    color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.side_bar_header .logo-img{
+    position: absolute;
+    scale: 125%;
+    transform: translateY(-2px);
+    left: 20px;
+    transition: 0.4s;
+}
+
+
+
+.side_bar_header .toggler{
+    height: 35px;
+    position: absolute;
+    right: -7px;
+    top: 15px;
+    width: 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    background: rgb(0, 0, 0);
+    transition: 0.4s;
+
+}
+
+.sidebar.collapsed .side_bar_header .sidebar-text{
+    transform: translate(-22px, 90px);
+    scale: 80%;
+}
+
+.sidebar.collapsed .side_bar_header .logo-img{
+    scale: 100%;
+    transform: translate(-5px, 10px);
+}
+
+.sidebar.collapsed .side_bar_header .toggler{
+    transform: translateY(20px);
+}
+
+.side_bar_header .toggler:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+.side_bar_header{
+    display: flex;
+    padding: 25px 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.side_bar_nav .nav_list{
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    padding: 0 15px;
+    flex-direction: column;
+    transform: translateY(35px);
+    transition: 0.4s;
+}
+
+.side_bar_nav .nav-link {
+    color: white;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    transition: 0.4s ease;
+    border-radius: 5px;
+}
+
+.side_bar_nav .nav-link:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.side_bar_nav .secundary_nav{
+    position: relative;
+    transform: translateY(-3px);
+}
+
+.sidebar.collapsed .side_bar_nav .primary_nav{
+    transform: translateY(65px);
+
+}
+
+.sidebar.collapsed .side_bar_nav .secundary_nav{
+    transform: translateY(-30px);
+}
+
+.side_bar_nav .dev_menu{
+    transform: translateY(105px);
+}
+
+.side_bar_nav .dev-toggler {
+    color: white;
+    display: flex;
+    border: none;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.4s ease;
+    border-radius: 5px;
+
+}
+
+.side_bar_nav .dev-toggler:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.side_bar_nav .dev-toggler .nav-label{
+    transition: 0.4s ease;
+}
+
+.sidebar.collapsed .side_bar_nav .dev-toggler .nav-label{
+
+opacity: 0;
+pointer-events: none;
+
+}
+
+.sidebar .dev-toggler{
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+}
+.side_bar_nav .dev-menu-list{
+    width: 200px;
+    display: block;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+    left: 300px;
+    transform: translateY(-120px);
+    background-color: black;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+.dev-menu-list.collapsed{
+    left: 12px;
+    opacity: 0;
+    visibility: hidden;
+    width: 10px;
+    scale: 55%;
+    transform: translateY(-190px);
+
+}
+.sidebar.collapsed .dev-menu-list{
+left: 65px;
+}
+.sidebar.collapsed .dev-menu-list.collapsed{
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
