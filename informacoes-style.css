@@ -288,17 +288,18 @@ left: 65px;
 
 .info-background{
 
-    width: 1000px;
+    width: 125vh;
     position: absolute;
-    margin: 330px;
+    margin-top: 330px;
+    margin-left: 23%;
     border-radius:150px;
-    height: calc(99vh - 16px);
+    height: calc(100vh - 16px);
     background-color: rgb(0, 0, 0);
 
 }
 .s-info-header{
     top: 260px;
-    width: 1400px;
+    width: calc(200vh - 120px);
     position: absolute;
     margin: 125px;
     border-radius: 16px;
@@ -308,9 +309,11 @@ left: 65px;
 
 .info-background-txt{
     font-size: x-large;
+    display: flex;
     position: absolute;
     margin-top: 25px;
-    transform: translateX(315px);
+    width: 95%;
+    justify-content: center;
     color: white;
     cursor: default;
 }
@@ -319,8 +322,11 @@ left: 65px;
     margin: 50px;
 }
 .info-txt{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
     position: sticky;
-    transform: translateY(-0px);
     margin: 50px;
+    margin-left: 90px;
     color: white;
 }
