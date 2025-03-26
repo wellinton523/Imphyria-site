@@ -28,6 +28,7 @@ body{
     height: calc(99vh - 16px);
     background-color: black;
     transition: 0.4s ease;
+    box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.462);
 }
 .side_bar_nav .link-tip{
     opacity: 0;
@@ -295,6 +296,9 @@ left: 65px;
     border-radius:150px;
     height: calc(100vh - 16px);
     background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+    animation: fade-in;
+    animation-duration: 1.4s;
 
 }
 .s-info-header{
@@ -305,6 +309,34 @@ left: 65px;
     border-radius: 16px;
     height: calc(150vh - 16px);
     background-color: black;
+    box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.462);
+    transition: 0.4s ease;
+    animation: fade-in;
+    animation-duration: 0.4s;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.s-info-header.collapsed{
+    width: calc(169vh - 25vh);
+    margin-left: 360px;
+}
+.info-background.collapsed{
+    margin-left: 31%;
+
+}
+.s-info-header.collapsed .info-txt-l{
+    width: 45em;
+}
+.s-info-header.collapsed .info-txt-r{
+    width: 45em;
+    margin-left: -30px;
 }
 
 .info-background-txt{
@@ -348,6 +380,10 @@ left: 65px;
     color: white;
     animation: appear-l ease-in-out;
     animation-duration: 1.4s;
+    transition: 0.4s;
+}
+.s-info-header.collapsed .info-txt-l{
+    width: 39em;
 }
 @keyframes appear-l{
     0%{
@@ -371,6 +407,7 @@ left: 65px;
     animation-duration: 1.4s;
     animation-timeline: scroll();
     animation-range: 0%, 60%;
+    transition: 0.4s;
 }
 @keyframes appear-r-t{
     0%{
@@ -387,11 +424,11 @@ left: 65px;
 @keyframes appear-r{
     0%{
         opacity: 0;
-        transform: translateX(95px);
+        transform: translateX(140px);
     }
     100%{
         opacity: 1;
-        transform: translateX(-5px);
+        transform: translateX(60px);
 
     }
 }
@@ -408,4 +445,5 @@ left: 65px;
     animation-duration: 1.4s;
     animation-timeline: scroll();
     animation-range: 0%, 60%;
+    transition: 0.4s;
 }
