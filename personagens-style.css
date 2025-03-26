@@ -288,7 +288,7 @@ left: 65px;
 
 .info-background{
 
-    width: 125vh;
+    width: calc(117vh - 16px);
     position: absolute;
     margin-top: 330px;
     margin-left: 23%;
@@ -299,11 +299,11 @@ left: 65px;
 }
 .s-info-header{
     top: 260px;
-    width: calc(200vh - 120px);
+    width: calc(200vh - 25vh);
     position: absolute;
     margin: 125px;
     border-radius: 16px;
-    height: calc(99vh - 16px);
+    height: calc(150vh - 16px);
     background-color: black;
 }
 
@@ -322,14 +322,43 @@ left: 65px;
     transform: translateX(00px);
     color: white;
     margin: 50px;
+    animation: appear-l-t ease-in-out;
+    animation-duration: 1.4s;
+}
+@keyframes appear-l-t{
+    0%{
+        opacity: 0;
+        scale: 50%;
+        transform: translateX(-300px);
+    }
+    100%{
+        opacity: 1;
+        scale: 100%;
+
+    }
 }
 .info-txt-l{
-    display: flex;
+    display: block;
+    margin-inline: auto;
+    width: 50em;
     text-align: left;
     position: sticky;
     transform: translateX(300px);
-    margin: 50px;
+    margin: 40px;
     color: white;
+    animation: appear-l ease-in-out;
+    animation-duration: 1.4s;
+}
+@keyframes appear-l{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(300px);
+
+    }
 }
 .theme-r{
     position: sticky;
@@ -338,12 +367,45 @@ left: 65px;
     transform: translateX(00px);
     color: white;
     margin: 50px;
+    animation: appear-r-t ease-in-out;
+    animation-duration: 1.4s;
+    animation-timeline: scroll();
+    animation-range: 0%, 60%;
+}
+@keyframes appear-r-t{
+    0%{
+        opacity: 0;
+        scale: 50%;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        scale: 100%;
+
+    }
+}
+@keyframes appear-r{
+    0%{
+        opacity: 0;
+        transform: translateX(95px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-5px);
+
+    }
 }
 .info-txt-r{
     display: block;
+    margin-inline: auto;
+    width: 50em;
     text-align: right;
     position: sticky;
-    transform: translateX(-300px);
-    margin: 50px;
+    transform: translateX(300px);
+    margin: 40px;
     color: white;
+    animation: appear-r ease-in-out;
+    animation-duration: 1.4s;
+    animation-timeline: scroll();
+    animation-range: 0%, 60%;
 }

@@ -288,7 +288,7 @@ left: 65px;
 
 .info-background{
 
-    width: 125vh;
+    width: calc(117vh - 16px);
     position: absolute;
     margin-top: 330px;
     margin-left: 23%;
@@ -299,7 +299,7 @@ left: 65px;
 }
 .s-info-header{
     top: 260px;
-    width: calc(200vh - 120px);
+    width: calc(200vh - 25vh);
     position: absolute;
     margin: 125px;
     border-radius: 16px;
@@ -317,16 +317,53 @@ left: 65px;
     color: white;
     cursor: default;
 }
-.theme{
+.theme-1{
     color: white;
     margin: 50px;
+    animation: appear ease-in-out;
+    animation-duration: 1.4s;
 }
-.info-txt{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
+.info-txt-1{
+    display: block;
+    margin-inline: auto;
+    width: 50em;
+    text-align: left;
     position: sticky;
-    margin: 50px;
-    margin-left: 90px;
+    margin: 40px;
     color: white;
+    animation: appear ease-in-out;
+    animation-duration: 2s;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.theme-2{
+    color: white;
+    margin: 50px;
+    animation: appear ease-in-out;
+    animation-duration: 1.4s;
+    animation-timeline: scroll();
+    animation-range: 0%, 60%;
+}
+.info-txt-2{
+    display: block;
+    margin-inline: auto;
+    width: 50em;
+    text-align: left;
+    position: sticky;
+    margin: 40px;
+    color: white;
+    animation: appear ease-in-out;
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    animation-range: -10%, 70%;
+    animation-delay: 2s;
 }
