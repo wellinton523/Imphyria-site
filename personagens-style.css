@@ -307,12 +307,12 @@ left: 65px;
     position: absolute;
     margin: 125px;
     border-radius: 16px;
-    height: 200vh;
     background-color: black;
     box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.462);
     transition: 0.4s ease;
     animation: fade-in;
     animation-duration: 0.4s;
+    
 }
 @keyframes fade-in {
     0%{
@@ -329,14 +329,6 @@ left: 65px;
 }
 .info-background.collapsed{
     margin-left: 31%;
-
-}
-.s-info-header.collapsed .info-txt-l{
-    width: 45em;
-}
-.s-info-header.collapsed .info-txt-r{
-    width: 45em;
-    margin-left: -30px;
 }
 
 .info-background-txt{
@@ -354,30 +346,33 @@ left: 65px;
     transform: translateX(00px);
     color: white;
     margin: 50px;
-    animation: appear-l-t ease-in-out;
-    animation-duration: 1.4s;
+    transition: 0.1s;
 }
-@keyframes appear-l-t{
-    0%{
-        opacity: 0;
-        scale: 50%;
-    }
-    100%{
-        opacity: 1;
-        scale: 100%;
-
-    }
+.theme-l-f{
+    display: block;
+    transform: translateX(00px);
+    color: white;
+    margin: 50px;
 }
-.info-txt-l{
+.info-txt-l-f{
     display: block;
     margin-inline: auto;
-    width: 50em;
+    width: 95%;
     text-align: left;
     position: sticky;
     margin: 40px;
     color: white;
-    animation: appear-l ease-in-out;
-    animation-duration: 1.4s;
+    transition: 0.4s;
+    text-overflow: clip;
+}
+.info-txt-l{
+    display: block;
+    margin-inline: auto;
+    width: 95%;
+    text-align: left;
+    position: sticky;
+    margin: 40px;
+    color: white;
     transition: 0.4s;
     text-overflow: clip;
 }
@@ -386,56 +381,17 @@ left: 65px;
     height: 25%;
     margin: 20px;
     border-radius: 15px;
+    transition: 0.4s ease;
 }
 
-.s-info-header.collapsed .info-txt-l{
-    width: 39em;
-}
-@keyframes appear-l{
-    0%{
-        opacity: 0;
-        transform: translateX(200px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(300px);
 
-    }
-}
 .theme-r{
     position: sticky;
     display: block;
     text-align: right;
     color: white;
     margin: 50px;
-    animation: appear-r-t ease-in-out;
-    animation-duration: 1.4s;
-    animation-timeline: view();
-    animation-range: 0%, 20%;
-    transition: 0.4s;
-}
-@keyframes appear-r-t{
-    0%{
-        opacity: 0;
-        scale: 50%;
-        transform: translateX(300px);
-    }
-    100%{
-        opacity: 1;
-        scale: 100%;
-
-    }
-}
-@keyframes appear-r{
-    0%{
-        opacity: 0;
-        transform: translateX(140px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(60px);
-
-    }
+    transition: 0.4s ease;
 }
 .info-txt-r{
     display: block;
@@ -443,10 +399,7 @@ left: 65px;
     width: 50em;
     text-align: right;
     position: sticky;
-    margin-right: 140px;
+    margin-right: 50px;
     color: white;
-    animation: appear-r ease-in-out;
-    animation-timeline: view();
-    animation-range: 0%, 20%;
-    transition: 0.4s;
+    transition: 0.4s ease;
 }

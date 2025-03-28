@@ -294,7 +294,7 @@ left: 65px;
     margin-top: 330px;
     margin-left: 23%;
     border-radius:150px;
-    height: calc(100vh - 16px);
+    height: 200px;
     background-color: rgb(0, 0, 0);
     transition: 0.4s;
     animation: fade-in;
@@ -306,7 +306,6 @@ left: 65px;
     position: absolute;
     margin: 125px;
     border-radius: 16px;
-    height: calc(150vh);
     background-color: black;
     box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.462);
     transition: 0.4s;
@@ -322,7 +321,7 @@ left: 65px;
     }
 }
 .s-info-header.collapsed{
-    width: calc(169vh - 25vh);
+    width: calc(160vh - 25vh);
     margin-left: 360px;
 }
 .info-background.collapsed{
@@ -349,7 +348,7 @@ left: 65px;
 .info-txt-1{
     display: block;
     margin-inline: auto;
-    width: 50em;
+    width: 95%;
     text-align: left;
     position: sticky;
     margin: 40px;
@@ -381,7 +380,7 @@ left: 65px;
 .info-txt-2{
     display: block;
     margin-inline: auto;
-    width: 50em;
+    width: 95%;
     text-align: left;
     position: sticky;
     margin: 40px;
