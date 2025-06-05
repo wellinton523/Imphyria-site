@@ -7,14 +7,22 @@ const infoheader = document.querySelector(".info-background")
 
 window.onload = function() {
     sidebar.classList.toggle("collapsed");
-    devmenulist.classList.toggle("collapsed")
+    document.querySelector(".sidebar-text").classList.toggle("collapsed")
+    document.querySelector(".sidebar-text.collapsed").textContent = "Wayless"
   };
 
 sidebartoggler.addEventListener("click", () => {
     sidebar.classList.toggle("collapsed");
     sinfoheader.classList.toggle("collapsed")
     infoheader.classList.toggle("collapsed")
+    if (document.querySelector(".sidebar-text").textContent == "Wayless"){
+        setTimeout(() => {
+            document.querySelector(".sidebar-text").textContent = "Wayless Studios"
+        }, 170);
+    }else{
+        setTimeout(() => {
+            document.querySelector(".sidebar-text.collapsed").textContent = "Wayless"
+        }, 10);
+    }
 })
-devmenutoggler.addEventListener("click", () => {
-    devmenulist.classList.toggle("collapsed")
-})
+
