@@ -4,16 +4,21 @@ const devmenulist = document.querySelector(".dev-menu-list")
 const devmenutoggler = document.querySelector(".dev-toggler")
 const sinfoheader = document.querySelector(".s-info-header")
 const infoheader = document.querySelector(".info-background")
+const midiab = document.querySelector(".midia_button")
+const midialist = document.querySelector(".midia_div")
 
 window.onload = function() {
     sidebar.classList.toggle("collapsed");
+    midialist.classList.toggle("collapsed")
     document.querySelector(".sidebar-text").classList.toggle("collapsed")
     document.querySelector(".sidebar-text.collapsed").textContent = "Wayless"
-  };
+};
+
 
 sidebartoggler.addEventListener("click", () => {
     sidebar.classList.toggle("collapsed");
     sinfoheader.classList.toggle("collapsed")
+    midialist.classList.add("collapsed")
     infoheader.classList.toggle("collapsed")
     if (document.querySelector(".sidebar-text").textContent == "Wayless"){
         setTimeout(() => {
@@ -24,5 +29,10 @@ sidebartoggler.addEventListener("click", () => {
             document.querySelector(".sidebar-text.collapsed").textContent = "Wayless"
         }, 10);
     }
+})
+
+
+midiab.addEventListener("click", () => {
+    midialist.classList.toggle("collapsed")
 })
 
