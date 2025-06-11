@@ -4,3 +4,22 @@
     background-size: cover;
     height: 100vh;
 }
+
+span, h2{
+    color: white;
+}
+
+.info_body{
+    background-color: black;
+    display: flex;
+    position: relative;
+    justify-self: center;
+    margin-top: 35px;
+    margin-left: 90px;
+    height: 90vh;
+    width: 170vh;
+    border-radius: 15px;
+}
+
+
+
