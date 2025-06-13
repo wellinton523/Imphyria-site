@@ -1,0 +1,84 @@
+.info_sobre {
+  font-size: x-large;
+    display: flex;
+    position: absolute;
+    margin-top: 25px;
+    width: 95%;
+    justify-content: center;
+    color: white;
+    cursor: default;
+    margin: 30;
+}
+
+.s-info-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.s-info-header span{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+}
+
+.info_sobre_nos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+    color: white;
+    font-size: large;
+}
+
+.info_sobre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+    color: white;
+    font-size: large;
+}
+.info_servicos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+    color: white;
+    font-size: large;
+}
+
+.info_carreiras {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+    color: white;
+    font-size: large;
+}
+
+.info_midias{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    margin: 35px;
+    color: white;
+    font-size: large;
+}
+
+

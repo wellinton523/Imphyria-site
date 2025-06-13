@@ -6,6 +6,7 @@ const sinfoheader = document.querySelector(".s-info-header")
 const infoheader = document.querySelector(".info-background")
 const midiab = document.querySelector(".midia_button")
 const midialist = document.querySelector(".midia_div")
+https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}
 
 window.onload = function() {
     sidebar.classList.toggle("collapsed");
