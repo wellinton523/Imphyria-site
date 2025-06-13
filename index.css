@@ -1,5 +1,17 @@
-.info_sobre {
-  font-size: x-large;
+@media(max-width: 450px){
+    .s-info-header{
+        width: 300px;
+    }
+    .s-info-header span{
+        font-size: x-small;
+    }
+    .info-background{
+        width: 300px;
+        visibility: hidden;
+    }
+}
+
+.s-info-header .info_sobre {
     display: flex;
     position: absolute;
     margin-top: 25px;
@@ -7,7 +19,8 @@
     justify-content: center;
     color: white;
     cursor: default;
-    margin: 30;
+    margin: 30px;
+    margin-right: 30px;
 }
 
 .s-info-header{
@@ -16,6 +29,7 @@
     justify-content: center;
     justify-items: center;
     flex-direction: column;
+
 }
 
 .s-info-header span{
@@ -27,7 +41,7 @@
     margin: 30px;
 }
 
-.info_sobre_nos {
+.s-info-header .info_sobre_nos {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -35,10 +49,10 @@
     justify-items: center;
     margin: 30px;
     color: white;
-    font-size: large;
+
 }
 
-.info_sobre {
+.s-info-header .info_sobre {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -46,9 +60,9 @@
     justify-items: center;
     margin: 30px;
     color: white;
-    font-size: large;
+
 }
-.info_servicos {
+.s-info-header .info_servicos {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -56,10 +70,10 @@
     justify-items: center;
     margin: 30px;
     color: white;
-    font-size: large;
+
 }
 
-.info_carreiras {
+.s-info-header .info_carreiras {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -67,10 +81,10 @@
     justify-items: center;
     margin: 30px;
     color: white;
-    font-size: large;
+
 }
 
-.info_midias{
+.s-info-header .info_midias{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -78,7 +92,9 @@
     justify-items: center;
     margin: 35px;
     color: white;
-    font-size: large;
+ 
 }
 
+@media (max-width: 450){
 
+}

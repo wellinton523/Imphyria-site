@@ -7,6 +7,7 @@
 
 span, h2{
     color: white;
+    
 }
 
 .info_body{
@@ -21,27 +22,9 @@ span, h2{
     border-radius: 15px;
 }
 
-.zanini{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    margin: 30px;
-    color: white;
-    font-size: large;
+.pessoinhas{
+    display:flex;
+    align-items: center;
+    margin: 30px
 }
-
-.wilhelm {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    margin: 30px;
-    color: white;
-    font-size: large;
-}
-
-
 

@@ -31,7 +31,7 @@ body{
     position: fixed;
     margin: 5px;
     border-radius: 16px;
-    height: calc(99vh - 16px);
+    height: calc(200vh - 16px);
     background-color: black;
     transition: 0.4s ease;
     box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.462);
