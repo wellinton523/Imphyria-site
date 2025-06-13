@@ -6,7 +6,7 @@ const sinfoheader = document.querySelector(".s-info-header")
 const infoheader = document.querySelector(".info-background")
 const midiab = document.querySelector(".midia_button")
 const midialist = document.querySelector(".midia_div")
-fd
+
 window.onload = function() {
     sidebar.classList.toggle("collapsed");
     midialist.classList.toggle("collapsed")

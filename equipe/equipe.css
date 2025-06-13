@@ -5,112 +5,339 @@
     height: 100vh;
 }
 
-.info_body{
+.text {
+    color: white;
+}
+
+.sidebar{
+    z-index: 1;
+}
+
+.info_body {
     position: relative;
     display: flex;
-    height: 18vh;
-    width: 150vh;
-    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: calc(100% - 250px);
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 50px auto 50px 155px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-span, h2{
+.team-carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.team-section-title {
+    text-align: center;
     color: white;
-    
-}
-html,
-body {
-  padding: 0;
-  margin: 0;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    position: relative;
 }
 
-html {
-  height: 100vh;
+.team-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
 }
 
-body {
-  height: 100vh;
-}
-
-.carousel {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  font-family: Arial;
-
-  &__list {
-    display: flex;
-    list-style: none;
+.carousel-wrapper {
     position: relative;
     width: 100%;
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.team-card {
+    min-width: calc(33.33% - 14px);
+    flex: 0 0 calc(33.33% - 14px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.5s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+}
+
+.team-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card-content {
+    text-align: center;
+}
+
+.team-card-content h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+/* Estilos do carousel alternativo */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.carousel-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+}
+
+.carousel-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+.cards-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards-container {
+    display: flex;
+    transition: transform 0.5s ease-out;
+    gap: 20px;
+    padding: 10px 0;
+    will-change: transform;
+}
+
+.card {
+    min-width: 300px;
+    flex: 0 0 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.card-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.carousel-controls {
+    display: flex;
     justify-content: center;
-    perspective: 300px;
-  }
-  
-  &__item {
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.control-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-size: 0px;
-    width: 150px;
-    height: 250px;
-    border-radius: 12px;
-    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-    position: absolute;
-    transition: all .3s ease-in;
-    
-    &:nth-child(1) {
-      background: linear-gradient(45deg, #2D35EB 0%, #904ED4 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.indicators {
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .info_body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        min-height: 85vh;
+        width: calc(100% - 40px);
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 20px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 20px 0;
     }
-    &:nth-child(2) {
-      background: linear-gradient(45deg, #2D35EB 0%, #fdbb2d 100%);
+
+    .team-carousel-container,
+    .carousel-container {
+        width: 100%;
+        padding: 10px;
     }
-    &:nth-child(3) {
-      background: linear-gradient(45deg, #2D35EB 0%, #22c1c3 100%);
+
+    .team-section-title,
+    .carousel-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
     }
-    &:nth-child(4) {
-      background: linear-gradient(45deg, #fdbb2d 0%, #904ED4 100%);
+
+    .team-carousel {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
-    &:nth-child(5) {
-      background: linear-gradient(45deg, #22c1c3 0%, #904ED4 100%);
+
+    .team-card {
+        min-width: 100%;
+        flex: 0 0 auto;
+        margin-bottom: 15px;
     }
-    
-    &[data-pos="0"] {
-      z-index: 5;
+
+    .cards-container {
+        flex-direction: column;
+        gap: 15px;
     }
-    
-    &[data-pos="-1"],
-    &[data-pos="1"] {
-      opacity: 0.7;
-      filter: blur(1px) grayscale(10%);
+
+    .card {
+        min-width: 100%;
+        flex: 0 0 auto;
+        margin-bottom: 15px;
     }
-    
-    &[data-pos="-1"] {
-      transform: translateX(-40%) scale(.9);
-      z-index: 4;
+
+    .team-card-image,
+    .card-image {
+        width: 100px;
+        height: 100px;
     }
-    
-    &[data-pos="1"] {
-      transform: translateX(40%) scale(.9);
-      z-index: 4;
+
+    .team-card-content h3,
+    .card-content h3 {
+        font-size: 1.1rem;
     }
-    
-    &[data-pos="-2"],
-    &[data-pos="2"] {
-      opacity: 0.4;
-      filter: blur(3px) grayscale(20%);
+
+    .carousel-controls {
+        margin-top: 20px;
     }
-    
-    &[data-pos="-2"] {
-      transform: translateX(-70%) scale(.8);
-      z-index: 3;
+
+    .control-btn {
+        width: 35px;
+        height: 35px;
+        visibility: hidden;
     }
-    
-    &[data-pos="2"] {
-      transform: translateX(70%) scale(.8);
-      z-index: 3;
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+    .info_body {
+        width: calc(100% - 20px);
+        margin: 10px auto;
     }
-  }
+
+    .team-section-title,
+    .carousel-title {
+        font-size: 1.3rem;
+    }
+
+    .team-card,
+    .card {
+        padding: 15px;
+    }
+
+    .team-card-image,
+    .card-image {
+        width: 80px;
+        height: 80px;
+    }
 }
