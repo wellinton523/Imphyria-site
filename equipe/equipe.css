@@ -6,10 +6,10 @@
 }
 
 .info_body{
-    align-self: center;
-    justify-self: center;
-    height: 99vh;
-    width: 99vh;
+    position: relative;
+    display: flex;
+    height: 18vh;
+    width: 150vh;
     background-color: black;
 }
 
