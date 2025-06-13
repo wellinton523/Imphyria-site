@@ -1,0 +1,14 @@
+.background {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.info_div{
+    background-color: black;
+    align-self: center;
+    margin-top: 300px;
+    width: 400px;
+    justify-self: center;
+}

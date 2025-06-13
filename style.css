@@ -1,7 +1,14 @@
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 450px) {
   .container {
     zoom: 0.7;
+  }
+  .sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 100vh;
   }
 }
 @font-face {
