@@ -64,3 +64,10 @@
     margin: 20px auto; 
     border-radius: 1px;
 }
+
+@media(max-width: 450px){
+    .anuncio_imagem{
+        width: 70%;
+        border-radius: 15px;
+    }
+}
