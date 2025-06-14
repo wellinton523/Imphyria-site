@@ -31,7 +31,6 @@ sidebartoggler.addEventListener("click", () => {
     }
 })
 
-
 midiab.addEventListener("click", () => {
     midialist.classList.toggle("collapsed")
 })
