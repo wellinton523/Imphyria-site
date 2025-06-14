@@ -8,8 +8,10 @@
     .info-background{
         width: 300px;
         visibility: hidden;
+        opacity: 0;
     }
 }
+
 
 .s-info-header {
     background-color: black;
