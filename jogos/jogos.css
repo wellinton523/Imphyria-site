@@ -4,11 +4,96 @@
     background-size: cover;
     height: 100vh;
 }
-
-.info_div{
+/*zanini esteve aqqui*/
+.info_div {
     background-color: black;
     align-self: center;
-    margin-top: 300px;
-    width: 400px;
+    margin-top: 40px;
+    width: 350px;
+    max-width: 1000px;
     justify-self: center;
+    border-radius: 15px;
+}
+.game_list {
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 15px;
+}
+.nav_game {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;  
+    border-radius: 50px / 20px;
+    width: 45%;
+    min-width: 300px;
+    max-width: 450px;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 400px;
+}
+.game_link {
+    color: white;
+    text-decoration: none;
+    border-radius: 15px ;
+}
+.game_link h1 {
+    margin-bottom: 8px; 
+    font-size: 1.7em;    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 2px;
+}
+.game_link img {
+    width: 100%;
+    border-radius: 15px; 
+    margin: 10px 0;
+}
+.game-description {
+    margin-top: 6px;    
+    font-size: 0.95em;   
+    line-height: 1.3em;  
+}
+.toggle-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.toggle-btn:hover {
+    background-color: #666;
+}
+.info_div_dupla {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+    align-items: flex-start;
+}
+.nav_game {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 50px / 20px;
+    width: 45%; 
+    min-width: 300px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media (max-width: 900px) {
+    .nav_game {
+        width: 90%; 
+    }
 }

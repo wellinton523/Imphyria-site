@@ -31,8 +31,21 @@ sidebartoggler.addEventListener("click", () => {
     }
 })
 
-
 midiab.addEventListener("click", () => {
     midialist.classList.toggle("collapsed")
 })
-
+function toggleDetalhes(button_ler1) {
+    const li = button_ler1.closest('.nav_game')
+    const resumo = li.querySelector('.resumo')
+    const detalhes = li.querySelector('.detalhes')
+    if (detalhes.style.display === 'none') {
+        resumo.style.display = 'none'
+        detalhes.style.display = 'block'
+        button_ler1.textContent = 'Ler menos'
+    } 
+    else {
+        resumo.style.display = 'block'
+        detalhes.style.display = 'none'
+        button_ler1.textContent = 'Ler mais'
+    }
+}
