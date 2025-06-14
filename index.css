@@ -42,7 +42,7 @@
     justify-items: center;
     flex-direction: column;
     padding: 1em 2em;
-
+    background-color: black;
 }
 
 .s-info-header span{
@@ -108,7 +108,7 @@
  
 }
 
-@media (max-width: 450px){
+@media (max-width: 768px){
     .s-info-header {
         background-color: black;
         align-self: center;
