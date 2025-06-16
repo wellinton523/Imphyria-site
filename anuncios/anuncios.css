@@ -5,6 +5,7 @@
     height: 100vh;
 }
 .anuncios_container {
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +15,14 @@
     background-position: center;
 }
 .anuncios_box {
-    background-color: rgba(0, 0, 0, 0.7); 
     padding: 30px 40px;
     border-radius: 20px;
     max-width: 600px;
     width: 90%;
     color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
     text-align: center;
 }
 .anuncios_box h1 {
@@ -33,30 +35,28 @@
     font-size: 1em;
     line-height: 1.4em;
 }
-.anuncio_imagem_container {
-    width: 350px;
+.anuncios_box .anuncio_imagem_container {
+    width: 80%;
     overflow: hidden;
     border-radius: 15px;
     display: inline-block;
     position: relative;
-    transition: box-shadow 0.4s ease; 
+    transition: 0.4s ease; 
     border: 0 solid white;
 }
 .anuncio_imagem {
     width: 100%;
     display: block;
-    transition: transform 0.4s ease;
+    transition: 0.4s ease;
 }
 .anuncio_imagem_container:hover {
     border: 4px solid white;
-    box-shadow: 0 0 0 4px white, 0 0 10px white;
+    box-shadow: 0 0 20px white;
 }
 .anuncio_imagem_container:hover .anuncio_imagem {
     transform: scale(1.1); 
 }
-.anuncio_imagem_container:hover {
-    box-shadow: 0 0 0 4px white; 
-}
+
 .anuncio_divisor {
     width: 80%;
     height: 2px;
@@ -65,9 +65,3 @@
     border-radius: 1px;
 }
 
-@media(max-width: 450px){
-    .anuncio_imagem{
-        width: 70%;
-        border-radius: 15px;
-    }
-}

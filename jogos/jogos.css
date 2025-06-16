@@ -4,7 +4,7 @@
     background-size: cover;
     height: 100vh;
 }
-/*zanini esteve aqqui*/
+/*zanini esteve aqui*/
 .info_div {
     background-color: black;
     align-self: center;
@@ -24,15 +24,16 @@
     border-radius: 15px;
 }
 .nav_game {
-    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
     padding: 15px 25px;  
-    border-radius: 50px / 20px;
+    border-radius: 15px;
     width: 45%;
     min-width: 300px;
-    max-width: 450px;
-    max-width: 900px;
+    max-width: 500px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
@@ -54,7 +55,17 @@
     width: 100%;
     border-radius: 15px; 
     margin: 10px 0;
+    transition: 0.4s ease;
 }
+.game_link img:hover{
+    width: 102%;
+    margin: 5px -10px;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px #ffffff84;
+    border: 4px solid white;
+    transition: 0.4s ease;
+}
+
 .game-description {
     margin-top: 6px;    
     font-size: 0.95em;   
@@ -69,10 +80,14 @@
     background-color: #444;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.4s ease;
 }
 .toggle-btn:hover {
     background-color: #666;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px #ffffff84;
+    border: 4px solid white;
+    transition: 0.4s ease;
 }
 .info_div_dupla {
     display: flex;
@@ -81,16 +96,6 @@
     flex-wrap: wrap; 
     margin-top: 40px;
     align-items: flex-start;
-}
-.nav_game {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px 25px;
-    border-radius: 50px / 20px;
-    width: 45%; 
-    min-width: 300px;
-    max-width: 450px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media (max-width: 900px) {
     .nav_game {
